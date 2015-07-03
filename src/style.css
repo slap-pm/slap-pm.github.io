@@ -11,9 +11,38 @@ body {
     max-width: 32em;
 }
 
-h1 {
+#title {
+    position: relative;
+    padding-left: 12em;
+}
+
+#title img.logo {
+    display: block;
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    left: 0;
+    top: 0;
+}
+
+h1 .initial {
+    font-weight: bold;
     font-size: 175%;
-    margin-bottom: 1em;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 0.85em;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 110%;
+    margin: 0; 
+}
+
+#title {
+    margin-bottom: 3em;
 }
 
 p {
