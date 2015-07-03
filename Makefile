@@ -7,4 +7,4 @@ neat:
 	find . -type f -name '*~' -or -name '*.bak' -exec rm -v {} \;
 
 published:
-	rsync --recursive --checksum --delete --compress --stats --verbose --rsh=ssh src/* $(SITE)
+	rsync --chmod=a=r --recursive --checksum --delete --compress --stats --verbose --rsh=ssh src/* $(SITE)
