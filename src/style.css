@@ -38,7 +38,8 @@ h1 .initial {
 h1 {
     font-weight: normal;
     font-size: 110%;
-    margin: 0; 
+    margin: 0;
+    margin-bottom: 0.25em;
 }
 
 #title {
@@ -48,3 +49,27 @@ h1 {
 p {
     text-align: justify;
 }
+
+#links {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3em;
+}
+
+#links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#links li {
+    margin-bottom: 1em;
+}
+
+#links a {
+    text-decoration: none;
+    color: #A8A0A0;
+}
+
