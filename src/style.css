@@ -64,8 +64,12 @@ p {
     margin: 0;
 }
 
-#links li {
+#links li.bowdlerise {
     margin-bottom: 1em;
+}
+
+#links li.sharing {
+    margin-bottom: 0;
 }
 
 #links a {
