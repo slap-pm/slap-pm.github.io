@@ -26,11 +26,11 @@ body {
 }
 
 h1 .initial {
+    display: inline-block;
+    position: relative;
     font-weight: bold;
     font-size: 175%;
     margin: 0;
-    display: inline-block;
-    position: relative;
     text-align: center;
     width: 0.85em;
 }
@@ -71,5 +71,9 @@ p {
 #links a {
     text-decoration: none;
     color: #A8A0A0;
+}
+
+body.speedy .bowdlerise {
+    display: none;
 }
 
