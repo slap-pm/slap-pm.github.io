@@ -17,6 +17,18 @@ jobs:
       uses: actions/upload-pages-artifact@v1
       with:
         path: 'target'
-    - name: Deploy to GitHub Pages
+
+  publish:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    needs: build
+    environment:
+      name: github-pages
+      url: $
+    runs-on: ubuntu-latest
+    steps:
+    - name: Publish to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
