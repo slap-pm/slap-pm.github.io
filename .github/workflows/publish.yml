@@ -13,10 +13,10 @@ jobs:
       run: make
     - name: Configure GitHub Pages
       uses: actions/configure-pages@v3
-#    - name: Upload Artifact
-#      uses: actions/upload-pages-artifact@v3
-#      with:
-#        path: 'target'
-#    - name: Deploy to GitHub Pages
-#      id: deployment
-#      uses: actions/deploy-pages@v2
+    - name: Upload Artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: 'target'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
