@@ -1,6 +1,6 @@
 
 CONTENT:=$(shell find src -not -name '*~' -and -not -path '*/\.*' -and -not -type d)
-TARGET=$(CONTENT:src/%=target/%) target/bowdlerised.html
+TARGET=$(CONTENT:src/%=target/%) target/sfw.html target/bowdlerised.html
 
 all: $(TARGET)
 
@@ -8,7 +8,10 @@ target/%: src/%
 	@mkdir -p $(dir $@)
 	cp $< $@
 
-target/bowdlerised.html: src/index.html
+target/bowdlerised.html: target/sfw.html
+	cp $< $@
+
+target/sfw.html: src/index.html
 	@mkdir -p $(dir $@)
 	sed -e 's/shit/stuff/g' -e 's/Shit/Stuff/g' -e 's/weary/peedy/g' $< > $@
 
