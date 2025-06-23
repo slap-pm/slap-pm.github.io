@@ -27,7 +27,7 @@ jobs:
     needs: build
     environment:
       name: github-pages
-      url: $
+      url: "https://slap.pm"
     runs-on: ubuntu-latest
     steps:
     - name: Publish to GitHub Pages
